@@ -1,9 +1,20 @@
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
 ul {
     list-style: none;
 }
 
 img {
     width: 325px;
+}
+
+main section > h2 {
+    margin: 0;
+    padding-left: 3rem;
+    font-size: 2rem;
 }
 
 main article {
