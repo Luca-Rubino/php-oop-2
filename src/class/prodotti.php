@@ -1,64 +1,75 @@
 <?php 
 
 class prodotti {
-    public $titolo;
-    public $prezzo;
-    public $peso;
-    public $ingredienti;
-    public $categoria;
+    private $titolo;
+    private $prezzo;
+    private $peso;
+    private $ingredienti;
+    private $categoria;
+    private $urlImg;
 
     // costruttori
-    function __construct($categoria, $titolo, $prezzo, $peso, $ingredienti){
+    public function __construct($titolo, $prezzo, $peso, $ingredienti, $categoria, $urlImg){
         $this -> categoria = $categoria;
         $this -> titolo = $titolo;
         $this -> prezzo = $prezzo;
         $this -> peso = $peso;
         $this -> ingredienti = $ingredienti;
+        $this -> urlImg = $urlImg;
     }
 
     // titolo
-    function getTitolo(){
+    public function getTitolo(){
         return $this -> titolo;
     }
 
-    function setTitolo($titolo){
+    public function setTitolo($titolo){
         $this -> titolo = $titolo;
     }
 
     // categoria
-    function getCategoria(){
+    public function getCategoria(){
         return $this -> categoria;
     }
 
-    function setCategoria($categoria){
+    public function setCategoria($categoria){
         $this -> categoria = $categoria;
     }
 
     // prezzo
-    function getPrezzo(){
+    public function getPrezzo(){
         return $this -> prezzo;
     }
 
-    function setPrezzo($prezzo){
+    public function setPrezzo($prezzo){
         $this -> prezzo = $prezzo;
     }
 
     // peso
-    function getPeso(){
+    public function getPeso(){
         return $this -> peso;
     }
 
-    function setPeso($peso){
+    public function setPeso($peso){
         $this -> peso = $peso;
     }
 
     // ingredienti
-    function getIngredienti(){
+    public function getIngredienti(){
         return $this -> ingredienti;
     }
 
-    function setIngredienti($ingredienti){
+    public function setIngredienti($ingredienti){
         $this -> ingredienti = $ingredienti;
+    }
+
+    // indirizzo immagine
+    public function geturlImg(){
+        return $this -> urlImg;
+    }
+
+    public function seturlImg($urlImg){
+        $this -> urlImg = $urlImg;
     }
 }
 
