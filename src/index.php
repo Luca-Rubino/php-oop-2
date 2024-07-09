@@ -41,8 +41,8 @@ $prodotti = [
                         <img src="<?php echo $prodotto -> geturlImg() ?>" alt="<?php echo $prodotto -> getTitolo() ?>">
                         <h2><?php echo $prodotto -> getTitolo() ?></h2>
                         <p><?php echo $prodotto -> getCategoria() ?></p>
-                        <p><?php echo "Prezzo: " . $prodotto -> getPrezzo() ?></p>
-                        <p><?php echo "Peso: " . $prodotto -> getPeso() ?></p>
+                        <p><?php echo "Prezzo: " . $prodotto -> getPrezzo() . "€" ?></p>
+                        <p><?php echo "Peso: " . $prodotto -> getPeso() . "g" ?></p>
                         <p><?php echo "Ingredienti: " . $prodotto -> getIngredienti() ?></p>
                     </li>
                 </ul>
