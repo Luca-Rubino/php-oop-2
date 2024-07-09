@@ -1,0 +1,24 @@
+ul {
+    list-style: none;
+}
+
+img {
+    width: 325px;
+}
+
+main article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+main li {
+    width: 20rem;
+    height: 39.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 20px;
+}
