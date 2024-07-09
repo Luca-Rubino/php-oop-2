@@ -1,7 +1,7 @@
 <?php 
 
 class prodotti {
-    private $titolo;
+    private $nome;
     private $prezzo;
     private $peso;
     private $ingredienti;
@@ -9,22 +9,22 @@ class prodotti {
     private $urlImg;
 
     // costruttori
-    public function __construct($titolo, $prezzo, $peso, $ingredienti, $categoria, $urlImg){
+    public function __construct($nome, $prezzo, $peso, $ingredienti, $categoria, $urlImg){
         $this -> categoria = $categoria;
-        $this -> titolo = $titolo;
+        $this -> nome = $nome;
         $this -> prezzo = $prezzo;
         $this -> peso = $peso;
         $this -> ingredienti = $ingredienti;
         $this -> urlImg = $urlImg;
     }
 
-    // titolo
-    public function getTitolo(){
-        return $this -> titolo;
+    // nome
+    public function getNome(){
+        return $this -> nome;
     }
 
-    public function setTitolo($titolo){
-        $this -> titolo = $titolo;
+    public function setNome($nome){
+        $this -> nome = $nome;
     }
 
     // categoria
