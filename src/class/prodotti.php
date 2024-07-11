@@ -3,18 +3,14 @@
 class prodotti {
     private $nome;
     private $prezzo;
-    private $peso;
-    private $ingredienti;
     private $categoria;
     private $urlImg;
 
     // costruttori
-    public function __construct($nome, $prezzo, $peso, $ingredienti, $categoria, $urlImg){
-        $this -> categoria = $categoria;
+    public function __construct($nome, $prezzo, $categoria, $urlImg){
         $this -> nome = $nome;
         $this -> prezzo = $prezzo;
-        $this -> peso = $peso;
-        $this -> ingredienti = $ingredienti;
+        $this -> categoria = $categoria;
         $this -> urlImg = $urlImg;
     }
 
@@ -45,24 +41,6 @@ class prodotti {
         $this -> prezzo = $prezzo;
     }
 
-    // peso
-    public function getPeso(){
-        return $this -> peso;
-    }
-
-    public function setPeso($peso){
-        $this -> peso = $peso;
-    }
-
-    // ingredienti
-    public function getIngredienti(){
-        return $this -> ingredienti;
-    }
-
-    public function setIngredienti($ingredienti){
-        $this -> ingredienti = $ingredienti;
-    }
-
     // indirizzo immagine
     public function geturlImg(){
         return $this -> urlImg;
@@ -72,9 +50,5 @@ class prodotti {
         $this -> urlImg = $urlImg;
     }
 }
-
-
-
-
 
 ?>
