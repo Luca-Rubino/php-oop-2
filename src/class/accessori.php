@@ -6,8 +6,8 @@ class accessori extends prodotti {
     private $misura;
 
     // costruttori
-    public function __construct($nome, $prezzo, $peso, $ingredienti, $categoria, $urlImg, $materiali, $misura,){
-        parent::__construct($nome, $prezzo, $peso, $ingredienti, $categoria, $urlImg, $materiali, $misura,);
+    public function __construct($nome, $prezzo, $categoria, $urlImg, $materiali, $misura,){
+        parent::__construct($nome, $prezzo, $categoria, $urlImg, $materiali, $misura,);
         $this -> materiali = $materiali;
         $this -> misura = $misura;
     }
